@@ -19,7 +19,7 @@ const FormComponent = () => {
 
     return (
         <div className="form-wrapper">
-            <h2>Secure Contact Form</h2>
+            <h2>Contact Form</h2>
             <div id="form-container" ref={formContainerRef}></div>
         </div>
     );
