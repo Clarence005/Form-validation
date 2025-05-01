@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { SecureForm } from './formModule';
+import { SecureForm } from './packages/formModule';
 
 const FormComponent = () => {
     const formContainerRef = useRef(null);
