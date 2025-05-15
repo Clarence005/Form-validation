@@ -1,13 +1,12 @@
 import React, { useEffect, useRef } from 'react';
-import { SecureForm } from './packages/formModule';
+import { createSecureForm } from '../packages/formModule'; 
 
 const FormComponent = () => {
+    // using useref to load the container div 
     const formContainerRef = useRef(null);
 
     useEffect(() => {
-        
-        const form = new SecureForm('form-container');
-        form.render();
+        createSecureForm('form-container'); 
 
         return () => {
             const container = document.getElementById('form-container');
@@ -25,4 +24,4 @@ const FormComponent = () => {
     );
 };
 
-export default FormComponent; 
+export default FormComponent;
